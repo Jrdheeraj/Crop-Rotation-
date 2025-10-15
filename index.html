@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Rotation Hub - Sustainable Agriculture Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-seedling"></i>
+                <span>CropRotation Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#workshops" class="nav-link">Workshops</a></li>
+                <li><a href="#farmer-portal" class="nav-link">Farmer Portal</a></li>
+                <li><a href="#impact" class="nav-link">Impact</a></li>
+                <li><a href="#resources" class="nav-link">Resources</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Background -->
+    <section id="home" class="hero">
+        <div id="three-container"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Transform Agriculture with <span class="highlight">Crop Rotation</span></h1>
+            <p class="hero-subtitle">Empowering farmers with sustainable practices for healthier soil and higher yields</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2500">0</span>
+                    <span class="stat-label">Farmers Trained</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="15000">0</span>
+                    <span class="stat-label">Hectares Impacted</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="22">0</span>
+                    <span class="stat-label">% Yield Increase</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <button class="btn-primary">Join Our Community</button>
+                <button class="btn-secondary">Watch Demo</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Our Mission</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Transforming Agriculture Through Education</h3>
+                    <p>Our Crop Rotation Community Service Project is dedicated to empowering farmers with sustainable agricultural practices. We believe that through proper education and community support, we can create a more resilient and productive farming ecosystem.</p>
+
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h4><i class="fas fa-bullseye"></i> Mission</h4>
+                            <p>To educate and support farmers in implementing sustainable crop rotation practices that improve soil health, increase yields, and promote environmental conservation.</p>
+                        </div>
+                        <div class="vision">
+                            <h4><i class="fas fa-eye"></i> Vision</h4>
+                            <p>Creating resilient farming communities through education, innovation, and collaborative sustainable agricultural practices for a better tomorrow.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div id="rotation-demo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Our Expert Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Dr. Priya Sharma</h3>
+                    <p class="team-role">Project Director & Agricultural Scientist</p>
+                    <p class="team-expertise">15 years in sustainable farming research</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Ravi Kumar</h3>
+                    <p class="team-role">Community Outreach Coordinator</p>
+                    <p class="team-expertise">8 years in rural development</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Anita Patel</h3>
+                    <p class="team-role">Training Specialist</p>
+                    <p class="team-expertise">10 years in farmer education</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Interactive Crop Rotation Education</h2>
+
+            <!-- 3D Crop Rotation Visualizer -->
+            <div class="rotation-visualizer">
+                <h3>3D Crop Rotation Cycles</h3>
+                <div class="rotation-controls">
+                    <button class="rotation-btn active" data-cycle="2">2-Year Rotation</button>
+                    <button class="rotation-btn" data-cycle="3">3-Year Rotation</button>
+                    <button class="rotation-btn" data-cycle="4">4-Year Rotation</button>
+                </div>
+                <div id="crop-rotation-3d"></div>
+                <div class="rotation-info">
+                    <div class="rotation-details">
+                        <h4 id="rotation-title">2-Year Basic Rotation</h4>
+                        <div id="rotation-crops"></div>
+                        <div id="rotation-benefits"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits Dashboard -->
+            <div class="benefits-dashboard">
+                <h3>Crop Rotation Benefits</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4>Soil Health</h4>
+                        <div class="progress-circle" data-percent="20">
+                            <span>20%</span>
+                        </div>
+                        <p>Improvement in soil fertility</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h4>Pest Control</h4>
+                        <div class="progress-circle" data-percent="30">
+                            <span>30%</span>
+                        </div>
+                        <p>Reduction in pest populations</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Yield Increase</h4>
+                        <div class="progress-circle" data-percent="25">
+                            <span>25%</span>
+                        </div>
+                        <p>Average crop yield improvement</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h4>Cost Reduction</h4>
+                        <div class="progress-circle" data-percent="18">
+                            <span>18%</span>
+                        </div>
+                        <p>Savings in input costs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section id="workshops" class="workshops">
+        <div class="container">
+            <h2 class="section-title">Workshops & Training</h2>
+
+            <div class="workshop-calendar">
+                <h3>Upcoming Events</h3>
+                <div class="calendar-container">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+
+            <div class="workshop-grid">
+                <div class="workshop-card">
+                    <div class="workshop-date">
+                        <span class="date">15</span>
+                        <span class="month">NOV</span>
+                    </div>
+                    <div class="workshop-content">
+                        <h3>Sustainable Farming Workshop</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Community Center, Rural Area</p>
+                        <p><i class="fas fa-users"></i> 50 Participants</p>
+                        <div class="workshop-topics">
+                            <span class="topic">Crop Rotation</span>
+                            <span class="topic">Soil Testing</span>
+                            <span class="topic">Organic Farming</span>
+                        </div>
+                        <button class="btn-primary">Register Now</button>
+                    </div>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-date">
+                        <span class="date">22</span>
+                        <span class="month">NOV</span>
+                    </div>
+                    <div class="workshop-content">
+                        <h3>Technology in Agriculture</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Agricultural College</p>
+                        <p><i class="fas fa-users"></i> 75 Participants</p>
+                        <div class="workshop-topics">
+                            <span class="topic">Digital Tools</span>
+                            <span class="topic">Weather Monitoring</span>
+                            <span class="topic">Crop Apps</span>
+                        </div>
+                        <button class="btn-primary">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farmer Portal Section -->
+    <section id="farmer-portal" class="farmer-portal">
+        <div class="container">
+            <h2 class="section-title">Farmer Portal</h2>
+
+            <div class="portal-grid">
+                <div class="portal-tool">
+                    <div class="tool-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Crop Planning Calculator</h3>
+                    <p>Plan your crop rotation cycles and get personalized recommendations</p>
+                    <button class="btn-secondary">Launch Tool</button>
+                </div>
+
+                <div class="portal-tool">
+                    <div class="tool-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Weather Dashboard</h3>
+                    <p>Real-time weather updates and agricultural forecasts</p>
+                    <button class="btn-secondary">View Weather</button>
+                </div>
+
+                <div class="portal-tool">
+                    <div class="tool-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Soil Health Analyzer</h3>
+                    <p>Analyze soil composition and get improvement recommendations</p>
+                    <button class="btn-secondary">Analyze Soil</button>
+                </div>
+
+                <div class="portal-tool">
+                    <div class="tool-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Community Forum</h3>
+                    <p>Connect with other farmers and share experiences</p>
+                    <button class="btn-secondary">Join Discussion</button>
+                </div>
+            </div>
+
+            <!-- Interactive Tools -->
+            <div class="interactive-tools">
+                <div class="tool-container">
+                    <h3>Crop Planning Calculator</h3>
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label>Farm Size (Hectares)</label>
+                            <input type="number" id="farm-size" placeholder="Enter farm size">
+                        </div>
+                        <div class="form-group">
+                            <label>Current Crop</label>
+                            <select id="current-crop">
+                                <option value="">Select current crop</option>
+                                <option value="wheat">Wheat</option>
+                                <option value="rice">Rice</option>
+                                <option value="maize">Maize</option>
+                                <option value="cotton">Cotton</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Soil Type</label>
+                            <select id="soil-type">
+                                <option value="">Select soil type</option>
+                                <option value="clay">Clay</option>
+                                <option value="sandy">Sandy</option>
+                                <option value="loam">Loam</option>
+                                <option value="silt">Silt</option>
+                            </select>
+                        </div>
+                        <button class="btn-primary" onclick="calculateRotation()">Get Recommendations</button>
+                    </div>
+                    <div id="rotation-results"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stories Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <h2 class="section-title">Our Impact Stories</h2>
+
+            <!-- Impact Statistics -->
+            <div class="impact-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="2500">0</h3>
+                    <p>Farmers Trained</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="180">0</h3>
+                    <p>Workshops Conducted</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="15000">0</h3>
+                    <p>Hectares Impacted</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="22">0</h3>
+                    <p>% Average Yield Increase</p>
+                </div>
+            </div>
+
+            <!-- Success Stories -->
+            <div class="success-stories">
+                <h3>Farmer Success Stories</h3>
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="story-content">
+                            <h4>Suresh Patil</h4>
+                            <p class="location">Maharashtra</p>
+                            <p class="improvement">35% yield increase with 3-year rotation</p>
+                            <blockquote>"Crop rotation changed my farming completely. My soil is healthier and my income doubled."</blockquote>
+                        </div>
+                    </div>
+
+                    <div class="story-card">
+                        <div class="story-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="story-content">
+                            <h4>Meera Devi</h4>
+                            <p class="location">Punjab</p>
+                            <p class="improvement">Reduced pesticide use by 60%</p>
+                            <blockquote>"Now I grow organic produce and get better prices in the market."</blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2 class="section-title">Educational Resources</h2>
+
+            <div class="resources-grid">
+                <div class="resource-category">
+                    <h3><i class="fas fa-book"></i> Guides & Manuals</h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <div>
+                                <h4>Crop Rotation Planning Guide</h4>
+                                <p>Step-by-step guide for effective rotations</p>
+                            </div>
+                            <button class="btn-download">Download</button>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <div>
+                                <h4>Soil Health Assessment Toolkit</h4>
+                                <p>Tools for monitoring soil fertility</p>
+                            </div>
+                            <button class="btn-download">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h3><i class="fas fa-video"></i> Video Tutorials</h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <i class="fas fa-play-circle"></i>
+                            <div>
+                                <h4>Introduction to Crop Rotation</h4>
+                                <p>15 minutes - Basic principles explained</p>
+                            </div>
+                            <button class="btn-watch">Watch</button>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fas fa-play-circle"></i>
+                            <div>
+                                <h4>Advanced Rotation Strategies</h4>
+                                <p>25 minutes - Complex systems</p>
+                            </div>
+                            <button class="btn-watch">Watch</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile Apps</h3>
+                    <div class="app-grid">
+                        <div class="app-card">
+                            <div class="app-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h4>CropCycle Pro</h4>
+                            <p>Rotation planning and monitoring</p>
+                            <div class="app-features">
+                                <span>Weather Integration</span>
+                                <span>Soil Monitoring</span>
+                            </div>
+                        </div>
+                        <div class="app-card">
+                            <div class="app-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <h4>Farmer's Assistant</h4>
+                            <p>Expert consultation platform</p>
+                            <div class="app-features">
+                                <span>Pest ID</span>
+                                <span>Market Prices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Agricultural Extension Center<br>Rural Development Block</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91-9876543210</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@croprotationproject.org</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="workshop">Workshop Registration</option>
+                                <option value="consultation">Agricultural Consultation</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>CropRotation Hub</span>
+                    </div>
+                    <p>Empowering farmers with sustainable crop rotation practices for a better tomorrow.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#workshops">Workshops</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Farmer Tools</h4>
+                    <ul>
+                        <li><a href="#farmer-portal">Crop Calculator</a></li>
+                        <li><a href="#farmer-portal">Weather Dashboard</a></li>
+                        <li><a href="#farmer-portal">Soil Analyzer</a></li>
+                        <li><a href="#farmer-portal">Community Forum</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Crop Rotation Hub. All rights reserved.</p>
+                <p>Developed for sustainable agriculture community service.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
