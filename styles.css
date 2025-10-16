@@ -372,6 +372,14 @@ body {
     color: var(--secondary-green);
     margin-bottom: 1rem;
 }
+.team-photo img {
+  width: 200px;         /* set size as needed */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;   /* makes it a circle */
+  border: 2px solid #4CAF50; /* optional: add border */
+  background: #fff;     /* optional: white background */
+}
 
 .team-card h3 {
     color: var(--primary-green);
