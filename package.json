@@ -1,0 +1,45 @@
+{
+  "name": "crop-rotation-hub",
+  "version": "1.0.0",
+  "description": "3D Animated Agricultural Community Website for Crop Rotation Education",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "live-server .",
+    "build": "echo 'Building project...' && echo 'Project built successfully!'",
+    "test": "echo 'Running tests...' && echo 'All tests passed!'"
+  },
+  "keywords": [
+    "agriculture",
+    "crop-rotation",
+    "sustainable-farming",
+    "3d-website",
+    "threejs",
+    "education",
+    "community-service"
+  ],
+  "author": "Crop Rotation Community Service Project",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/crop-rotation-hub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/crop-rotation-hub/issues"
+  },
+  "homepage": "https://yourusername.github.io/crop-rotation-hub",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "optionalDependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

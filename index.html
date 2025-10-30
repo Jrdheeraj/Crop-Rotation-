@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Rotation Hub - Sustainable Agriculture Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-seedling"></i>
+                <span>CropRotation Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#workshops" class="nav-link">Workshops</a></li>
+                <li><a href="#farmer-portal" class="nav-link">Farmer Portal</a></li>
+                <li><a href="#impact" class="nav-link">Impact</a></li>
+                <li><a href="#resources" class="nav-link">Resources</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Background -->
+    <section id="home" class="hero">
+        <div id="three-container"></div>
+        <div class="hero-content">
+            <h1 class="hero-title"><span class="highlight">Crop Rotation</span></h1>
+            <h1 class="hero-subtitle">Empowering farmers with sustainable practices for<br>healthier soil and higher yields</p></<br>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="0">0</span>
+                    <span class="stat-label">Farmers Trained</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="0">0</span>
+                    <span class="stat-label">Hectares Impacted</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="0">0</span>
+                    <span class="stat-label">% Yield Increase</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <button class="btn-primary">Join Our Community</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Our Mission</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Transforming Agriculture Through Education</h3>
+                    <p>Our Crop Rotation Community Service Project is dedicated to empowering farmers with sustainable agricultural practices. We believe that through proper education and community support, we can create a more resilient and productive farming ecosystem.</p>
+
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h4><i class="fas fa-bullseye"></i> Mission</h4>
+                            <p>To educate and support farmers in implementing sustainable crop rotation practices that improve soil health, increase yields, and promote environmental conservation.</p>
+                        </div>
+                        <div class="vision">
+                            <h4><i class="fas fa-eye"></i> Vision</h4>
+                            <p>Creating resilient farming communities through education, innovation, and collaborative sustainable agricultural practices for a better tomorrow.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div id="rotation-demo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="mentor-section">
+
+        <!-- Section Title -->
+        <div class="section-title">
+            <h1>Project Mentor</h1>
+            <p class="subtitle">Guiding our journey towards sustainable agriculture</p>
+        </div>
+
+        <!-- Mentor Card -->
+        <div class="mentor-card">
+            <div class="mentor-content">
+
+                <!-- Mentor Photo -->
+                <div class="mentor-photo">
+                    <div class="photo-wrapper">
+                        <!-- 
+                            ========== REPLACE WITH MENTOR PHOTO ==========
+                            Replace the placeholder icon with actual image:
+                            <img src="mentor-photo.jpg" alt="Mr. P. Vishwanatha Reddy">
+                        -->
+                            <img src="pappi sir.jpg" alt="Mr. P. Vishwanatha Reddy">
+                        <div class="photo-placeholder"></div>
+                    </div>
+                </div>
+
+                <!-- Mentor Information -->
+                <div class="mentor-info">
+                    <h2 class="mentor-name">Mr. P. Vishwanatha Reddy</h2>
+                    <p class="mentor-credentials">M.Tech (Ph.D)</p>
+                    <p class="mentor-title">Associate Professor - Computer Science Engineering</p>
+
+                    <!-- Mentor Quote/Description -->
+                    <div class="mentor-quote">
+                        <span class="quote-icon">"</span>Empowering students to create meaningful impact through technology-driven solutions for sustainable agriculture and community development.
+                    </div>
+
+                    <span class="mentor-badge">Project Mentor & Guide</span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+<!-- Team Section -->
+<section class="team-section">
+  <h2>Meet Our Team</h2>
+  <div class="team-container">
+    <!-- Team Leader & Field Coordinator -->
+    <div class="team-card">
+      <img src="santhosh.jpg" alt="M. Santhosh Kumar" class="team-img">
+      <h3>M. Santhosh Kumar</h3>
+      <p class="role">Team Leader & Field Coordinator</p>
+      <p class="info">Roll No: 23W51A0569</p>
+      <p class="desc">Expert in field coordination, leadership, and project strategy.</p>
+    </div>
+    <!-- Technical & Documentation Head -->
+    <div class="team-card">
+      <img src="dheeraj.jpg" alt="K. Dheeraj" class="team-img">
+      <h3>K. Dheeraj</h3>
+      <p class="role">Technical & Documentation Head</p>
+      <p class="info">Roll No: 23W51A0555</p>
+      <p class="desc">Technical leadership, documentation, and solution architecture.</p>
+    </div>
+    <!-- Survey & Community Interaction -->
+    <div class="team-card">
+      <img src="ashok.jpg" alt="K. Ashok" class="team-img">
+      <h3>K. Ashok</h3>
+      <p class="role">Survey & Community Interaction</p>
+      <p class="info">Roll No: 23W51A0557</p>
+      <p class="desc">Specialized in surveys, community outreach, and data gathering.</p>
+    </div>
+    <!-- Awareness & Training Coordinator -->
+    <div class="team-card">
+      <img src="jayasree.jpg" alt="T. Jayasree" class="team-img">
+      <h3>T. Jayasree</h3>
+      <p class="role">Awareness & Training Coordinator</p>
+      <p class="info">Roll No: 23W51A0551</p>
+      <p class="desc">Responsible for awareness programs and training sessions.</p>
+    </div>
+    <!-- Data Collection & Report Support -->
+    <div class="team-card">
+      <img src="vennela.jpg" alt="K. Vennela" class="team-img">
+      <h3>K. Vennela</h3>
+      <p class="role">Data Collection & Report Support</p>
+      <p class="info">Roll No: 23W51A0552</p>
+      <p class="desc">Expert in data gathering, analysis and reporting.</p>
+    </div>
+  </div>
+</section>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Interactive Crop Rotation Education</h2>
+
+            <!-- 3D Crop Rotation Visualizer -->
+            <div class="rotation-visualizer">
+                <h3>3D Crop Rotation Cycles</h3>
+                <div class="rotation-controls">
+                    <button class="rotation-btn active" data-cycle="2">2-Year Rotation</button>
+                    <button class="rotation-btn" data-cycle="3">3-Year Rotation</button>
+                    <button class="rotation-btn" data-cycle="4">4-Year Rotation</button>
+                </div>
+                <div id="crop-rotation-3d"></div>
+                <div class="rotation-info">
+                    <div class="rotation-details">
+                        <h4 id="rotation-title">2-Year Basic Rotation</h4>
+                        <div id="rotation-crops"></div>
+                        <div id="rotation-benefits"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits Dashboard -->
+            <div class="benefits-dashboard">
+                <h3>Crop Rotation Benefits</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4>Soil Health</h4>
+                        <div class="progress-circle" data-percent="20">
+                            <span>20%</span>
+                        </div>
+                        <p>Improvement in soil fertility</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h4>Pest Control</h4>
+                        <div class="progress-circle" data-percent="30">
+                            <span>30%</span>
+                        </div>
+                        <p>Reduction in pest populations</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Yield Increase</h4>
+                        <div class="progress-circle" data-percent="25">
+                            <span>25%</span>
+                        </div>
+                        <p>Average crop yield improvement</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h4>Cost Reduction</h4>
+                        <div class="progress-circle" data-percent="18">
+                            <span>18%</span>
+                        </div>
+                        <p>Savings in input costs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section id="workshops" class="workshops">
+        <div class="container">
+            <h2 class="section-title">Workshops & Training</h2>
+
+            <div class="workshop-calendar">
+                <h3>Upcoming Events</h3>
+                <div class="calendar-container">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+
+            <div class="workshop-grid">
+                <div class="workshop-card">
+                    <div class="workshop-date">
+                        <span class="date">15</span>
+                        <span class="month">NOV</span>
+                    </div>
+                    <div class="workshop-content">
+                        <h3>Sustainable Farming Workshop</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Community Center, Rural Area</p>
+                        <p><i class="fas fa-users"></i> 0 Participants</p>
+                        <div class="workshop-topics">
+                            <span class="topic">Crop Rotation</span>
+                            <span class="topic">Soil Testing</span>
+                            <span class="topic">Organic Farming</span>
+                        </div>
+                        <button class="btn-primary">Register Now</button>
+                    </div>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-date">
+                        <span class="date">22</span>
+                        <span class="month">NOV</span>
+                    </div>
+                    <div class="workshop-content">
+                        <h3>Technology in Agriculture</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Agricultural College</p>
+                        <p><i class="fas fa-users"></i> 0 Participants</p>
+                        <div class="workshop-topics">
+                            <span class="topic">Digital Tools</span>
+                            <span class="topic">Weather Monitoring</span>
+                            <span class="topic">Crop Apps</span>
+                        </div>
+                        <button class="btn-primary">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farmer Portal Section -->
+    <section id="farmer-portal" class="farmer-portal">
+        <div class="container">
+            <h2 class="section-title">Farmer Portal</h2>
+
+            <div class="portal-grid">
+                <div class="portal-tool">
+                    <div class="tool-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Crop Planning Calculator</h3>
+                    <p>Plan your crop rotation cycles and get personalized recommendations</p>
+                    <button class="btn-secondary">Launch Tool</button>
+                </div>
+
+                <div class="portal-tool">
+                    <div class="tool-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Weather Dashboard</h3>
+                    <p>Real-time weather updates and agricultural forecasts</p>
+                    <button class="btn-secondary">View Weather</button>
+                </div>
+
+                <div class="portal-tool">
+                    <div class="tool-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Soil Health Analyzer</h3>
+                    <p>Analyze soil composition and get improvement recommendations</p>
+                    <button class="btn-secondary">Analyze Soil</button>
+                </div>
+
+                <div class="portal-tool">
+                    <div class="tool-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Community Forum</h3>
+                    <p>Connect with other farmers and share experiences</p>
+                    <button class="btn-secondary">Join Discussion</button>
+                </div>
+            </div>
+
+            <!-- Interactive Tools -->
+            <div class="interactive-tools">
+                <div class="tool-container">
+                    <h3>Crop Planning Calculator</h3>
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label>Farm Size (Hectares)</label>
+                            <input type="number" id="farm-size" placeholder="Enter farm size">
+                        </div>
+                        <div class="form-group">
+                            <label>Current Crop</label>
+                            <select id="current-crop">
+                                <option value="">Select current crop</option>
+                                <option value="wheat">Wheat</option>
+                                <option value="rice">Rice</option>
+                                <option value="maize">Maize</option>
+                                <option value="cotton">Cotton</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Soil Type</label>
+                            <select id="soil-type">
+                                <option value="">Select soil type</option>
+                                <option value="clay">Clay</option>
+                                <option value="sandy">Sandy</option>
+                                <option value="loam">Loam</option>
+                                <option value="silt">Silt</option>
+                            </select>
+                        </div>
+                        <button class="btn-primary" onclick="calculateRotation()">Get Recommendations</button>
+                    </div>
+                    <div id="rotation-results"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stories Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <h2 class="section-title">Our Impact Stories</h2>
+
+            <!-- Impact Statistics -->
+            <div class="impact-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="0">0</h3>
+                    <p>Farmers Trained</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="0">0</h3>
+                    <p>Workshops Conducted</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="0">0</h3>
+                    <p>Hectares Impacted</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="0">0</h3>
+                    <p>% Average Yield Increase</p>
+                </div>
+            </div>
+
+            <!-- Success Stories -->
+            <div class="success-stories">
+                <h3>Farmer Success Stories</h3>
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="story-content">
+                            <h4>Suresh Patil</h4>
+                            <p class="location">Maharashtra</p>
+                            <p class="improvement">35% yield increase with 3-year rotation</p>
+                            <blockquote>"Crop rotation changed my farming completely. My soil is healthier and my income doubled."</blockquote>
+                        </div>
+                    </div>
+
+                    <div class="story-card">
+                        <div class="story-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="story-content">
+                            <h4>Meera Devi</h4>
+                            <p class="location">Punjab</p>
+                            <p class="improvement">Reduced pesticide use by 60%</p>
+                            <blockquote>"Now I grow organic produce and get better prices in the market."</blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2 class="section-title">Educational Resources</h2>
+
+            <div class="resources-grid">
+                <div class="resource-category">
+                    <h3><i class="fas fa-book"></i> Guides & Manuals</h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <div>
+                                <h4>Crop Rotation Planning Guide</h4>
+                                <p>Step-by-step guide for effective rotations</p>
+                            </div>
+                            <button class="btn-download">Download</button>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <div>
+                                <h4>Soil Health Assessment Toolkit</h4>
+                                <p>Tools for monitoring soil fertility</p>
+                            </div>
+                            <button class="btn-download">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h3><i class="fas fa-video"></i> Video Tutorials</h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <i class="fas fa-play-circle"></i>
+                            <div>
+                                <h4>Introduction to Crop Rotation</h4>
+                                <p>15 minutes - Basic principles explained</p>
+                            </div>
+                            <button class="btn-watch">
+                            <a href="https://youtu.be/FMVJOzK4uBU?si=-jxxf-eLIkbp4wJP" target="_blank" style="color: inherit; text-decoration: none;">Watch</a>
+                            </button>
+                        </div>
+                        <div class="resource-item">
+                            <i class="fas fa-play-circle"></i>
+                            <div>
+                                <h4>Advanced Rotation Strategies</h4>
+                                <p>25 minutes - Complex systems</p>
+                            </div>
+                            <button class="btn-watch">
+                            <a href="https://youtu.be/iDwhAUhSbDY?si=o9GSfWWiemguKJlr" target="_blank" style="color: inherit; text-decoration: none;">Watch</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile Apps</h3>
+                    <div class="app-grid">
+                        <div class="app-card">
+                            <div class="app-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h4>CropCycle Pro</h4>
+                            <p>Rotation planning and monitoring</p>
+                            <div class="app-features">
+                                <span>Weather Integration</span>
+                                <span>Soil Monitoring</span>
+                            </div>
+                        </div>
+                        <div class="app-card">
+                            <div class="app-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <h4>Farmer's Assistant</h4>
+                            <p>Expert consultation platform</p>
+                            <div class="app-features">
+                                <span>Pest ID</span>
+                                <span>Market Prices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="survey-section">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+            <h1>Field Survey Documentation</h1>
+            <p>Extensive field surveys conducted in Mallipeddivaari Palli village to understand local farming practices and promote sustainable crop rotation techniques</p>
+        </div>
+
+        <!-- Photo Gallery -->
+        <div class="photo-gallery">
+            
+            <!-- PHOTO 1 - REPLACE src="your-photo-1.jpg" WITH YOUR ACTUAL IMAGE PATH -->
+            <div class="photo-item" onclick="openLightbox(0)">
+                <img src="survey2.jpg" 
+                     alt="Farmer Interview">
+                <div class="photo-caption">
+                    <h3>Farmer Interview - Poreddy Ramana Reddy</h3>
+                </div>
+            </div>
+
+            <!-- PHOTO 2 - REPLACE src="your-photo-2.jpg" WITH YOUR ACTUAL IMAGE PATH -->
+            <div class="photo-item" onclick="openLightbox(1)">
+                <img src="survey 4.jpg" 
+                     alt="Field Assessment">
+                <div class="photo-caption">
+                    <h3>Field Assessment</h3>
+                </div>
+            </div>
+
+            <!-- PHOTO 3 - REPLACE src="your-photo-3.jpg" WITH YOUR ACTUAL IMAGE PATH -->
+            <div class="photo-item" onclick="openLightbox(2)">
+                <img src="banner.jpeg" 
+                     alt="Community Interaction">
+                <div class="photo-caption">
+                    <h3>Community Interaction Session</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-container">
+            <div class="video-wrapper">
+                <!-- 
+                    ========== REPLACE YOUR VIDEO HERE ==========
+                    1. Replace src="your-video.mp4" with your actual video file path
+                    2. Add poster="your-thumbnail.jpg" for video thumbnail
+                    3. Supported formats: .mp4, .webm, .ogg
+                -->
+                <video controls poster="">
+                    <source src="lv_0_20251029141944.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-caption">
+                <h3>Complete Field Survey & Farmer Interviews</h3>
+                <p>Duration: 2:36 | Mallipeddivaari Palli Village Survey</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ========== LIGHTBOX MODAL ========== -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightbox(event)">✕</button>
+        <button class="lightbox-nav lightbox-prev" onclick="changeImage(-1, event)">❮</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Survey Photo">
+        </div>
+        <button class="lightbox-nav lightbox-next" onclick="changeImage(1, event)">❯</button>
+    </div>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+        // Array of image sources for lightbox
+        // UPDATE THESE WITH YOUR ACTUAL IMAGE PATHS
+        const images = [
+            'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&h=800&fit=crop',
+            'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1200&h=800&fit=crop',
+            'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200&h=800&fit=crop'
+        ];
+
+        let currentImageIndex = 0;
+
+        // Open lightbox with specific image
+        function openLightbox(index) {
+            currentImageIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            lightboxImg.src = images[currentImageIndex];
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        // Close lightbox
+        function closeLightbox(event) {
+            if (event.target.id === 'lightbox' || event.target.classList.contains('lightbox-close')) {
+                const lightbox = document.getElementById('lightbox');
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto'; // Re-enable scrolling
+                event.stopPropagation();
+            }
+        }
+
+        // Navigate between images
+        function changeImage(direction, event) {
+            event.stopPropagation();
+            currentImageIndex += direction;
+            
+            // Loop around if at the beginning or end
+            if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            } else if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            }
+            
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = images[currentImageIndex];
+        }
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const lightbox = document.getElementById('lightbox');
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Navigate with arrow keys
+        document.addEventListener('keydown', function(event) {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox.classList.contains('active')) {
+                if (event.key === 'ArrowLeft') {
+                    changeImage(-1, event);
+                } else if (event.key === 'ArrowRight') {
+                    changeImage(1, event);
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91-9908716938</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>jrdheeraj5@gmail.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/kdheerajj_?utm_source=qr&igsh=MWtmMnh2N3N4Mndjcw=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>For More Information Contact Us</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="workshop">Workshop Registration</option>
+                                <option value="consultation">Agricultural Consultation</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>CropRotation Hub</span>
+                    </div>
+                    <p>Empowering farmers with sustainable crop rotation practices for a better tomorrow.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#workshops">Workshops</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Farmer Tools</h4>
+                    <ul>
+                        <li><a href="#farmer-portal">Crop Calculator</a></li>
+                        <li><a href="#farmer-portal">Weather Dashboard</a></li>
+                        <li><a href="#farmer-portal">Soil Analyzer</a></li>
+                        <li><a href="#farmer-portal">Community Forum</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Crop Rotation Hub. All rights reserved.</p>
+                <p>Developed for sustainable agriculture community service.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
