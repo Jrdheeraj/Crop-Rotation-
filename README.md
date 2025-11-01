@@ -317,9 +317,3 @@ The Crop Rotation Hub aims to:
 - Provide accessible education resources
 - Support farmer knowledge sharing
 - Promote environmental conservation
-
----
-
-**Happy Coding! 🚀🌾**
-
-For questions or support, please contact: [info@croprotationproject.org](mailto:info@croprotationproject.org)
